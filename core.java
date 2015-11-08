@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import commands.commands;
 
 public class core {
 	public static void main(String[] args)
@@ -10,7 +11,12 @@ public class core {
 			String command = scan.nextLine();
 			if(command.equals("help"))
 			{
-				System.out.println("This is help");
+				commands.help();
+			}
+			else if(command.equals("exit"))
+			{
+				System.out.println("Exited!");
+				break;
 			}
 			else
 			{
